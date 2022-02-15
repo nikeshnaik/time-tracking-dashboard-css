@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <main>
+
+    <div class="container"></div>
+
+    <div class="profile_section">
+      <div class="profile_bkg">
+        <div class="profile">
+          <div class="profile_pic">
+            <img src="images/image-jeremy.png" alt="">
+          </div>
+          <div class="profile_text">
+            <p id="profile-text-pre">
+              Report for
+            </p>
+            <p id="profile-text-name">Jeremy Robson</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Highlight the current filter -->
+      <div class="time_frame">
+        <p class="highlight">Daily</p>
+        <p class="">Weekly</p>
+        <p class="">Monthly</p>
+      </div>
+
+    </div>
+
+    <div class="work_section">
+      <div class="eclipse_background">
+        <div class="main_section">
+
+          <!-- daily/weekly/monthly change with javascript -->
+          <div class="header">
+            <span class="title">Work</span>
+            <span class="btn">Button</span>
+          </div>
+          <p id="show unit-value">5hrs</p>
+          <p id="show previous-unit-value">Previous - 7hrs</p>
+        </div>
+
+        <!-- weekly -->
+        <!-- <p id="unit-value">32hrs</p> -->
+        <!-- <p id="previous-unit-value">Previous - 36hrs</p> -->
+
+        <!-- monthly -->
+        <!-- <p id="month-value">103hrs</p> -->
+        <!-- <p class="previous-month-value">Previous - 128hrs</p> -->
+        <!-- monthly -->
+      </div>
+    </div>
+
+    <div class="play_section">
+
+      Play
+      1hr
+      <!-- daily -->
+      Previous - 2hrs
+      <!-- daily -->
+      10hrs
+      <!-- weekly -->
+      Previous - 8hrs
+      <!-- weekly -->
+      23hrs
+      <!-- monthly -->
+      Previous - 29hrs
+      <!-- monthly -->
+    </div>
+
+    <div class="study_section">
+
+      Study
+      0hrs
+      <!-- daily -->
+      Previous - 1hr
+      <!-- daily -->
+      4hrs
+      <!-- weekly -->
+      Previous - 7hrs
+      <!-- weekly -->
+      13hrs
+      <!-- monthly -->
+      Previous - 19hrs
+      <!-- monthly -->
+    </div>
+
+
+    <div class="exercise_section">
+      Exercise
+      1hr
+      <!-- daily -->
+      Previous - 1hr
+      <!-- daily -->
+      4hrs
+      <!-- weekly -->
+      Previous - 5hrs
+      <!-- weekly -->
+      11hrs
+      <!-- monthly -->
+      Previous - 18hrs
+      <!-- monthly -->
+    </div>
+
+
+    <div class="social_section">
+      Social
+      1hr
+      <!-- daily -->
+      Previous - 3hrs
+      <!-- daily -->
+      5hrs
+      <!-- weekly -->
+      Previous - 10hrs
+      <!-- weekly -->
+      21hrs
+      <!-- monthly -->
+      Previous - 23hrs
+      <!-- monthly -->
+    </div>
+
+
+    <div class="self_care_section">
+      Self Care
+      0hrs
+      <!-- daily -->
+      Previous - 1hr
+      <!-- daily -->
+      2hrs
+      <!-- weekly -->
+      Previous - 2hrs
+      <!-- weekly -->
+      7hrs
+      <!-- monthly -->
+      Previous - 11hrs
+      <!-- monthly -->
+    </div>
+  </main>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+:root {
+    --primay-Blue: hsl(246, 80%, 60%);
+    --primay-Light-red: hsl(15, 100%, 70%);
+    --primay-Soft-blue: hsl(195, 74%, 62%);
+    --primay-Light-red: hsl(348, 100%, 68%);
+    --primay-Lime-green: hsl(145, 58%, 55%);
+    --primay-Violet: hsl(264, 64%, 52%);
+    --primay-Soft-orange: hsl(43, 84%, 65%);
+
+    --neutral-Very-dark-blue: hsl(226, 43%, 10%);
+    --neutral-Dark-blue: hsl(235, 46%, 20%);
+    --neutral-Desaturated-blue: hsl(235, 45%, 61%);
+    --neutral-Pale-Blue: hsl(236, 100%, 87%);
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Karla", sans-serif;
+}
+
+body {
+    background-color: var(--neutral-Very-dark-blue);
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 1.3rem;
+}
+
+.container {
+    grid-area: 3 / 3 / 5 / 7;
+    background-color: white;
+}
+
+.profile_section {
+    grid-area: 3 / 3 / 5 / 4;
+    background-color: var(--neutral-Very-dark-blue);
+}
+
+.profile_bkg {
+    background-color: var(--neutral-Dark-blue);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.profile {
+    background-color: var(--primay-Blue);
+    height: 15rem;
+    border-radius: 1rem;
+}
+
+.profile_pic {
+    position: relative;
+    top: 1rem;
+    left: 1rem;
+    padding-bottom: 2rem;
+}
+
+.profile_pic > img {
+    width: 4rem;
+    height: 4rem;
+    border: 0.2rem white solid;
+    border-radius: 50%;
+}
+
+.profile_text {
+    padding: 1rem;
+    text-align: left;
+}
+
+.profile_text > #profile-text-pre {
+    color: white;
+    font-size: 0.6rem;
+}
+
+.profile_text > #profile-text-name {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+
+.time_frame {
+    width: inherit;
+    height: 10rem;
+    color: white;
+    background-color: var(--neutral-Dark-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 1rem;
+    border-end-end-radius: 1rem;
+    border-end-start-radius: 1rem;
+}
+
+.time_frame > p {
+    padding: 0.4rem;
+}
+
+.work_section {
+    grid-area: 3 / 4 / 4 / 5;
+}
+
+.play_section {
+    grid-area: 3 / 5 / 4 / 6;
+}
+
+.study_section {
+    grid-area: 3 / 6 / 4 / 7;
+}
+
+.exercise_section {
+    grid-area: 4 / 4 / 5 / 5;
+}
+
+.social_section {
+    grid-area: 4 / 5 / 5 / 6;
+}
+
+.self_care_section {
+    grid-area: 4 / 6 / 5 / 7;
+}
