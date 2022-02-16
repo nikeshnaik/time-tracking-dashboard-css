@@ -17,6 +17,8 @@
     --neutral-Dark-blue: hsl(235, 46%, 20%);
     --neutral-Desaturated-blue: hsl(235, 45%, 61%);
     --neutral-Pale-Blue: hsl(236, 100%, 87%);
+
+    --profile_height: 15rem;
 }
 
 html {
@@ -54,7 +56,7 @@ main {
 
 .profile {
     background-color: var(--primay-Blue);
-    height: 15rem;
+    height: var(--profile_height);
     border-radius: 1rem;
 }
 
@@ -90,7 +92,7 @@ main {
 
 .time_frame {
     width: inherit;
-    height: 10rem;
+    height: 15rem;
     color: white;
     background-color: var(--neutral-Dark-blue);
     display: flex;
@@ -108,6 +110,44 @@ main {
 
 .work_section {
     grid-area: 3 / 4 / 4 / 5;
+    color: white;
+    background-color: #ff8b64;
+    padding-top: 2rem;
+    border-radius: 0.7rem;
+}
+
+.main_section {
+    width: inherit;
+    height: 9rem;
+    background-color: rebeccapurple;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 0.7rem;
+    padding: 1rem;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: red;
+}
+
+.header-text {
+    text-align: left;
+    position: relative;
+    top: -1rem;
+    background-color: #ff8b64;
+}
+
+#unit-value {
+    font-size: 2rem;
+    padding-bottom: 0.2rem;
+}
+
+#previous-unit-value {
+    font-size: 0.7rem;
 }
 
 .play_section {
