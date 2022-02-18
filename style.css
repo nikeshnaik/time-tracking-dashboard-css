@@ -100,8 +100,10 @@ main {
     border-end-start-radius: 1rem;
 }
 
-.time_frame > p {
+.time_frame > a {
     padding: 0.4rem;
+    text-decoration: none;
+    color: white;
 }
 
 .work_section {
