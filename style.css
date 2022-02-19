@@ -106,6 +106,10 @@ main {
     color: white;
 }
 
+a::first-letter {
+    text-transform: capitalize;
+}
+
 .work_section {
     grid-area: 3 / 4 / 4 / 5;
     display: grid;
