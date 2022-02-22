@@ -177,13 +177,13 @@ function create_grid_item(css_class, title, current, previous) {
     header_div = document.createElement("div")
     header_div.className = "header"
     span_title = document.createElement("span")
-    span_title.id = "title"
+    span_title.className = "title"
     span_title.textContent = title
 
     span_btn = document.createElement("span")
     span_btn.className = "img_span"
     btn_img = document.createElement("img")
-    btn_img.id = "btn_img"
+    btn_img.className = "btn_img"
     btn_img.setAttribute("src", "images/icon-ellipsis.svg")
     span_btn.appendChild(btn_img)
 
@@ -194,10 +194,10 @@ function create_grid_item(css_class, title, current, previous) {
     header_text_div = document.createElement("div")
     header_text_div.className = "header-text"
     p_current = document.createElement("p")
-    p_current.id = "unit-value"
+    p_current.className = "unit-value"
     p_current.textContent = current + "hrs"
     p_previous = document.createElement("p")
-    p_previous.id = "previous-unit-value"
+    p_previous.className = "previous-unit-value"
     p_previous.textContent = "Previous - " + previous + "hrs"
 
     header_text_div.appendChild(p_current)
