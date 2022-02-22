@@ -185,6 +185,7 @@ function create_grid_item(css_class, title, current, previous) {
     btn_img = document.createElement("img")
     btn_img.className = "btn_img"
     btn_img.setAttribute("src", "images/icon-ellipsis.svg")
+    btn_img.setAttribute("alt", "button_img")
     span_btn.appendChild(btn_img)
 
     header_div.appendChild(span_title)
